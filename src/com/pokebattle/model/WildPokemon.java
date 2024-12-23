@@ -1,4 +1,4 @@
-package com.pokebattle.model;
+package src.com.pokebattle.model;
 
 public class WildPokemon extends Pokemon {
 	

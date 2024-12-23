@@ -1,9 +1,11 @@
-package com.pokebattle.battle;
+package src.com.pokebattle.battle;
 
 import java.util.Scanner;
 import java.util.Set;
+
+import src.com.pokebattle.model.*;
+
 import java.util.HashSet;
-import com.pokebattle.model.*;
 
 public class Catch {
     private static final Set<String> VALID_BALLS = new HashSet<>();

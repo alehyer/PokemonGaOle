@@ -1,6 +1,6 @@
-package com.pokebattle.battle;
+package src.com.pokebattle.battle;
 
-import com.pokebattle.model.*;
+import src.com.pokebattle.model.*;
 
 public class Battle {
 

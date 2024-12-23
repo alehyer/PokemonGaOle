@@ -1,4 +1,4 @@
-package com.pokebattle.game;
+package src.com.pokebattle.game;
 
 public class GameInstructions {
 

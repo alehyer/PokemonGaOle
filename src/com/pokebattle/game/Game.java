@@ -1,12 +1,13 @@
-package com.pokebattle.game;
+package src.com.pokebattle.game;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
-import com.pokebattle.model.*;
-import com.pokebattle.battle.*;
+
+import src.com.pokebattle.battle.*;
+import src.com.pokebattle.model.*;
 
 public class Game {
 
@@ -225,7 +226,7 @@ public class Game {
                 c.Catching(wildPokemon2, player1);
             }
         } else {
-            System.out.println("\nYou lost the first battle, so you cannot catch the Pokémon.");
+            System.out.println("\n-----------------------------------------\nYou lost the first battle, so you cannot catch the Pokémon.\n-----------------------------------------");
         }
 
         if (secondBattleWon) {
@@ -247,7 +248,7 @@ public class Game {
                 }
             }
         } else {
-            System.out.println("\nYou lost the second battle, so you cannot catch the Pokémon.");
+            System.out.println("\n-----------------------------------------\nYou lost the second battle, so you cannot catch the Pokémon.\n-----------------------------------------");
         }
 
         
@@ -258,7 +259,7 @@ public class Game {
         System.out.println("\nPlayer Score: " + BattleScore.getPlayerscore());
         System.out.println("\nOpponent Score: " + BattleScore.getOpponentscore());
 
-        String filePath = "ScoreList.txt";
+        String filePath = "src/com/pokebattle/run/ScoreList.txt";
 
         try (FileWriter writer = new FileWriter(filePath, true)) { 
             writer.write(name + " - " + BattleScore.getPlayerscore() + "\n");
